@@ -1,0 +1,22 @@
+.todoFormContainer {
+  margin-bottom: 20px;
+}
+
+.todoFormContainer input {
+  padding: 10px;
+  width: 40%;
+  border-radius: 10%;
+  font-size: 1.5rem;
+}
+
+.todoFormContainer button {
+  padding: 10px;
+  margin-left: 10px;
+  width: 70px;
+  border-radius: 10%;
+  font-size: 1.5rem;
+}
+
+.todoFormContainer button:hover {
+  background-color: #fff;
+}
