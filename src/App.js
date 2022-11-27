@@ -32,11 +32,26 @@ function App() {
     setTodos(todos.filter((todo) => todo.id !== id))
   }
 
+  //добавление функции завершения задачи
+  const toggleTodoHandler = (id) => {
+    setTodos(
+      todos.map((todo) =>
+        todo.id === id
+          ? { ...todo, isCompleted: !todo.isCompleted }
+          : { ...todo }
+      )
+    )
+  }
+
   return (
     <div className="App">
       <h1 className="header">Todo List</h1>
       <TodoForm addTodo={addTodoHandler} />
-      <TodoList todos={todos} deleteTodo={deleteTodoHandler} />
+      <TodoList
+        todos={todos}
+        deleteTodo={deleteTodoHandler}
+        toggleTodo={toggleTodoHandler}
+      />
     </div>
   )
 }
