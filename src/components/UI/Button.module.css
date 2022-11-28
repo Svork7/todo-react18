@@ -1,14 +1,15 @@
-.button {
-  padding: 10px;
+.mainButton {
+  padding-top: 8px;
   margin-left: 10px;
-  width: 70px;
-
-  font-size: 1.5rem;
+  height: 60px;
+  width: 60px;
+  font-size: 2rem;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s;
   border-radius: 5px;
 }
 
-.button:hover {
+.mainButton:hover {
   background-color: crimson;
+  transition: 0.5s;
 }

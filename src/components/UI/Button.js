@@ -2,14 +2,14 @@ import styles from './Button.module.css'
 
 function Button({ onClick, children, title, disabled = false }) {
   return (
-    <Button
-      className={styles.button}
+    <button
+      className={styles.mainButton}
       onClick={onClick}
       title={title}
       disabled={disabled}
     >
       {children}
-    </Button>
+    </button>
   )
 }
 
