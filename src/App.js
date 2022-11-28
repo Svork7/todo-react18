@@ -54,6 +54,10 @@ function App() {
     setTodos(todos.filter((todo) => !todo.isCompleted))
   }
 
+  //переменная счетчик выполненных задач
+  const completedTodosCount = todos.filter((todo) => todo.isCompleted).length
+  //console.log(comletedTodosCount)
+
   return (
     <div className="App">
       <h1 className="header">Todo List</h1>
@@ -62,6 +66,7 @@ function App() {
         <TodosActions
           resetTodos={resetTodosHandler}
           deleteCompletedTodos={deleteCompletedTodosHandler}
+          completedTodosExist={!!completedTodosCount}
         />
       )}
       <TodoList
