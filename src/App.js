@@ -74,6 +74,11 @@ function App() {
         deleteTodo={deleteTodoHandler}
         toggleTodo={toggleTodoHandler}
       />
+      {completedTodosCount > 0 && (
+        <h2>{`You have completed ${completedTodosCount} ${
+          completedTodosCount === 1 ? 'todo' : 'todos'
+        }`}</h2>
+      )}
     </div>
   )
 }
